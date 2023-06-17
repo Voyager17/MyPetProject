@@ -1,17 +1,12 @@
-import requests
-
-
-from configuration import SERVICE_URL
-from src.enums.global_enums import GlobalErrorMessages
-from src.baseclasses.response import Response
-from src.schemas.post import POST_SCHEMA
-
-
-def test_getting_posts():
-    r = requests.get(url=SERVICE_URL)
-    response = Response(r)
-
-    response.assert_status_code(400).validate(POST_SCHEMA)
+POST_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "page": {"type": "number"},
+        # "enum": [6] it means that 6 MUST be in the response
+        "per_page": {"type": "number", "enum": [6]},
+    },
+    "required": ["page"]
+}
 
 
 # {'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2,
