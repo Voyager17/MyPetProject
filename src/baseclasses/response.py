@@ -6,15 +6,16 @@ class Response:
 
     def __init__(self, response):
         self.response = response
-        self.response.json = response.json()
+        self.response_json = response.json()
         self.response_status = response.status_code
 
     def validate(self, schema):
         if isinstance(self.response.json, list):
             for item in self.response.json:
-                validate(item, schema)
+                schema.parse_obj(item)
         else:
-            validate(self.response.json, schema)
+            schema.parse_obj(self.response_json)
+        return self
 
     def assert_status_code(self, expecting_status_code):
         if isinstance(expecting_status_code, list):

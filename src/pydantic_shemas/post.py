@@ -1,20 +1,23 @@
-import requests
+from pydantic import BaseModel, validator, Field
 
 
-from configuration import SERVICE_URL
-from src.enums.global_enums import GlobalErrorMessages
-from src.baseclasses.response import Response
-# from src.schemas.post import POST_SCHEMA
-from src.pydantic_shemas.post import Post
+class Post(BaseModel):
+    # this row is equall @validator("page") page: int = Field(le=2)
+    page: int = Field(le=1)
+    per_page: int
+    data: list
+    # name: str = Field(alias="_name")
+
+    # The second way
+   # @validator("page")
+   # def check_that_page_more_one(cls, v):
+    #    if v > 1:
+    #        raise ValueError('Page is more than 2')
+    #    else:
+    #        return v
 
 
-def test_getting_posts():
-    r = requests.get(url=SERVICE_URL)
-    response = Response(r)
-
-    response.assert_status_code(200).validate(Post)
-
-
+Post.parse_obj
 # {'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2,
 
 # 'data':
