@@ -9,7 +9,7 @@ class Post(BaseModel):
     # name: str = Field(alias="_name")
 
     # The second way
-   # @validator("page")
+   # @validator("page") # This works only for field "page"
    # def check_that_page_more_one(cls, v):
     #    if v > 1:
     #        raise ValueError('Page is more than 2')
@@ -17,7 +17,6 @@ class Post(BaseModel):
     #        return v
 
 
-Post.parse_obj
 # {'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2,
 
 # 'data':

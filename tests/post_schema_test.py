@@ -18,6 +18,7 @@ def test_getting_posts():
     assert len(received_posts) == 6, GlobalErrorMessages.WRONG_STATUS_CODE.value
     for item in received_posts:
         # You can stay just validate(received_posts, POST_SCHEMA) if it is not a list
+        # I mean u can remove the cycle
         validate(received_posts, POST_SCHEMA)
 
 
