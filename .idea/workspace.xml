@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ee7f33-458c-4f7d-800e-f4a7fdf33bc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requriments.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baseclasses/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/baseclasses/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/global_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/global_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/the_third_lesson_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/the_third_lesson_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/petproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/petproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/the_fourth_lessons_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/the_fourth_lessons_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/users/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/users/test_users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +35,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/petproject/tests",
+    "last_opened_file_path": "D:/petproject",
     "settings.editor.selected.configurable": "configurable.group.project"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\petproject" />
       <recent name="D:\petproject\tests" />
     </key>
   </component>
