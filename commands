@@ -1,0 +1,6 @@
+"""
+For allure launching 
+1) pytest -s -v --durations=0 -vv  tests/users/test_users.py --alluredir=allureress - Making files fo allure into the folder allures 
+2) allure serve allureress - Launching the Allure
+
+"""
