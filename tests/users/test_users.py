@@ -3,6 +3,9 @@ import pytest
 from configuration import SERVICE_URL
 from src.baseclasses.response import Response
 from src.schemas.user import User
+from src.schemas.computer import Computer
+from examples.examples import computer
+
 import requests
 
 
@@ -41,3 +44,8 @@ def test_calculation(first_value, second_value, result, get_calculate):
     test calculation
     """
     assert get_calculate(first_value, second_value) == result
+
+
+def test_pydantic_object():
+    comp = Computer.parse_obj(computer)
+    print(comp.detailed_info.physical.photo)

@@ -1,5 +1,6 @@
 import pytest
 from src.generators.player_localisation import PlayerLocalisation
+from src.enums.user_enums import Statuses
 
 
 @pytest.mark.parametrize("status", [
@@ -9,6 +10,11 @@ from src.generators.player_localisation import PlayerLocalisation
     "INACTIVE"
 ])
 def test_status(status, get_player_generator):
+    print(get_player_generator.set_status(status).build())
+
+
+@pytest.mark.parametrize("status", Statuses.list())
+def test_status_second(status, get_player_generator):
     print(get_player_generator.set_status(status).build())
 
 
