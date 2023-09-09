@@ -100,3 +100,6 @@ dmypy.json
 
 #Allure
 allureress/
+
+#myvenv
+.myvenv/
