@@ -101,5 +101,5 @@ dmypy.json
 #Allure
 allureress/
 
-#myvenv ignore 
+#myvenv ignore 1
 .myvenv/*
