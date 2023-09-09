@@ -102,4 +102,4 @@ dmypy.json
 allureress/
 
 #myvenv ignore 1
-.myvenv/*
+myvenv/
