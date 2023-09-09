@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 88
+exclude = [
+    ".git",
+    "__pycache__",
+]
+
+[tool.ruff.mccabe]
+max-complexity = 10
