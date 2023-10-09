@@ -1,4 +1,3 @@
-
 from configuration import SERVICE_URL
 from src.baseclasses.response import Response
 from src.schemas.user import User

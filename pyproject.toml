@@ -1,5 +1,12 @@
 [tool.ruff]
 line-length = 88
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "D",   # pydocstyle
+  "PT",  # flake8-pytest-style
+]
 exclude = [
     ".git",
     "__pycache__",

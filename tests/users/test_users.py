@@ -18,21 +18,20 @@ def test_getting_users_list(get_users, make_number):
     print(make_number)
 
 
-@pytest.mark.development
-@pytest.mark.production
+@pytest.mark.development()
+@pytest.mark.production()
 @pytest.mark.skip('[BUG 1223] Missing data')
 def test_another():
-    """
-    in that test we try to check 1=1
-    """
+    """In that test we try to check 1=1."""
     assert 1 == 1
 
-# pytest -s -v -k development  tests/users/test_users.py #run tests only with mark @development
+
+# pytest -s -v -k development  tests/users/test_users.py #run tests only with mark @development  # noqa: E501
 # pytest -s -v --durations=0 -vv  tests/users/test_users.py # shows time of running
 
 
-@pytest.mark.development
-@pytest.mark.parametrize('first_value, second_value, result', [
+@pytest.mark.development()()
+@pytest.mark.parametrize(('first_value', 'second_value', 'result'), [
                          (1, 2, 3),
                          (-1, -2, -3),
                          (-1, 2, 1),
@@ -40,9 +39,7 @@ def test_another():
                          ("b", "b", None)
                          ])
 def test_calculation(first_value, second_value, result, get_calculate):
-    """
-    test calculation
-    """
+    """Test calculation."""
     assert get_calculate(first_value, second_value) == result
 
 
